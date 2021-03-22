@@ -139,9 +139,12 @@ html {
 
 ul.perfect-list > li {
     list-style: none;
-    border: 2px solid #a0a0a0;
+    border-width: 2px;
+    border-color: #a0a0a0;
     padding: 4px 8px;
     border-radius: 3px;
+    border-left-style: solid;
+    border-right-style: solid;
 }
 
 ul.perfect-list {
@@ -160,33 +163,17 @@ ul.perfect-list > li:last-child {
     border-bottom-right-radius: 3px;
 }
 
-/* ul li {
-    border: 2px;
-    border-style: solid;
-    border-color: #a0a0a0;
-    padding: 4px 8px;
-} */
-/* 
-ul.perfect-list {
-    border-style: solid;
-    border-color: #a0a0a0;
-    padding: 4px 8px;
-    border-radius: 3px;
-    list-style: none;
-    color: #353535;
-    cursor: pointer;
-} */
-
-/* ul.perfect-list li:hover {
+ul.perfect-list li:hover {
     background-color: #ebebeb;
     cursor: pointer;
 }
 
-ul.perfect-list li:not(.select) {
-    border: 0px;
-} */
-/* ul.perfect-list.select {
-    background-color: #bfdbff;
+ul.perfect-list > li.select {
+    background-color: #bfbfbf;
     border-color: #2e79db;
-    cursor: default;
-}  */
+    border-bottom-style: solid;
+}
+
+ul.perfect-list > li:not(.select) + li {
+    border-top-style: solid;
+}
