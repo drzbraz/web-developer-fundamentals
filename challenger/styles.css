@@ -127,16 +127,28 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+body {
+    background-color: #50a7a5;
+}
 .content {
     margin: auto;
     width: 50%;
-    padding: 10px;
+    padding: 24px;
+    background-color: white;
+    min-height: 342px;
 }
 
 .title {
     font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #0db0ae;
+    padding: 8px;
 }
 .inputField {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 24px;
 }
